@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Unit Conversion</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Metric/Imperial unit Conversion</h1>
+        <h2 id="number-to-convert"></h2>
+        <!-- <input type="number" name="" id="number-to-convert"> -->
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="flex">
+          <section class="length even">
+            <h3>Length (Meter/Feet</h3>
+            <p class="number-conversion">
+              <span id="meters"></span>|<span id="feet"></span>
+            </p>
+          </section>
+          <section class="volume even">
+            <h3>Volume (Liters/Gallons</h3>
+            <p class="number-conversion">
+              <span id="liters"></span>|<span id="gallons"></span>
+            </p>
+          </section>
+          <section class="mass even">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p class="number-conversion">
+              <span id="kilos"></span>|<span id="pounds"></span>
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
 </html>
