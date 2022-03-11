@@ -7,14 +7,13 @@ const metersEl = document.querySelector('#meters');
 const litersEl = document.querySelector('#liters');
 const kilosEl = document.querySelector('#kilos');
 
-const input = document.getElementById('user-input')
-const submit = document.getElementById('submit')
+const input = document.getElementById('user-input');
+const submit = document.getElementById('submit');
 
 const conversion = 20;
 number.textContent = conversion;
 
 const userNumber = input.value;
-
 
 // FORMULAS
 //  f -> m =  F / 3.281
@@ -30,17 +29,17 @@ const kilosToPounds = (conversion * 2.205).toFixed(3);
 // L -> G = L * 3.785
 const litersToGallons = (conversion * 3.785).toFixed(3);
 
-feetEl.textContent = ` ${conversion} feet = ${feetToMeters}`;
+feetEl.textContent = ` ${conversion} feet = ${feetToMeters} meters`;
 
-gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters}`;
+gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters} liters`;
 
-poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo}`;
+poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo} kilograms`;
 
-metersEl.textContent = `${conversion} meters = ${metersToFeet} `
+metersEl.textContent = `${conversion} meters = ${metersToFeet} feet `;
 
-litersEl.textContent = `${conversion} liters = ${litersToGallons} `
+litersEl.textContent = `${conversion} liters = ${litersToGallons} gallons `;
 
-kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} `
+kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} pounds `;
 
 const userInputConversion = () => {
   const conversion = input.value;
@@ -61,17 +60,17 @@ const userInputConversion = () => {
   // L -> G = L * 3.785
   const litersToGallons = (conversion * 3.785).toFixed(3);
 
-  feetEl.textContent = ` ${conversion} feet = ${feetToMeters}`;
+  feetEl.textContent = ` ${conversion} feet = ${feetToMeters} meters`;
 
-  gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters}`;
+  gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters} liters`;
 
-  poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo}`;
+  poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo} kilograms`;
 
-  metersEl.textContent = `${conversion} meters = ${metersToFeet} `;
+  metersEl.textContent = `${conversion} meters = ${metersToFeet} feet `;
 
-  litersEl.textContent = `${conversion} liters = ${litersToGallons} `;
+  litersEl.textContent = `${conversion} liters = ${litersToGallons} gallons `;
 
-  kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} `;
-}
+  kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} pounds `;
+};
 
-submit.addEventListener('click', () => userInputConversion())
+submit.addEventListener('click', () => userInputConversion());
