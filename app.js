@@ -1,4 +1,6 @@
+// Variable Setup
 const number = document.querySelector('#number-to-convert');
+
 const feetEl = document.querySelector('#feet');
 const gallonsEl = document.querySelector('#gallons');
 const poundsEl = document.querySelector('#pounds');
@@ -11,6 +13,7 @@ const input = document.getElementById('user-input');
 const submit = document.getElementById('submit');
 
 const conversion = 20;
+
 number.textContent = conversion;
 
 const userNumber = input.value;
@@ -29,6 +32,7 @@ const kilosToPounds = (conversion * 2.205).toFixed(3);
 // L -> G = L * 3.785
 const litersToGallons = (conversion * 3.785).toFixed(3);
 
+// conversions to DOM
 feetEl.textContent = ` ${conversion} feet = ${feetToMeters} meters`;
 
 gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters} liters`;
