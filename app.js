@@ -47,34 +47,35 @@ kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} pounds `;
 
 const userInputConversion = () => {
   const conversion = input.value;
+  if (input.value > 0) {
+    number.textContent = input.value;
 
-  number.textContent = input.value;
+    // FORMULAS
+    //  f -> m =  F / 3.281
+    const feetToMeters = (conversion / 3.281).toFixed(3);
+    //  P -> K = p / 2.205
+    const poundsToKilo = (conversion / 2.205).toFixed(3);
+    // G -> L = G / 3.785
+    const gallonsToLiters = (conversion / 3.785).toFixed(3);
+    // M -> F = M * 3.281
+    const metersToFeet = (conversion * 3.281).toFixed(3);
+    // K -> P = K * 2.205
+    const kilosToPounds = (conversion * 2.205).toFixed(3);
+    // L -> G = L * 3.785
+    const litersToGallons = (conversion * 3.785).toFixed(3);
 
-  // FORMULAS
-  //  f -> m =  F / 3.281
-  const feetToMeters = (conversion / 3.281).toFixed(3);
-  //  P -> K = p / 2.205
-  const poundsToKilo = (conversion / 2.205).toFixed(3);
-  // G -> L = G / 3.785
-  const gallonsToLiters = (conversion / 3.785).toFixed(3);
-  // M -> F = M * 3.281
-  const metersToFeet = (conversion * 3.281).toFixed(3);
-  // K -> P = K * 2.205
-  const kilosToPounds = (conversion * 2.205).toFixed(3);
-  // L -> G = L * 3.785
-  const litersToGallons = (conversion * 3.785).toFixed(3);
+    feetEl.textContent = ` ${conversion} feet = ${feetToMeters} meters`;
 
-  feetEl.textContent = ` ${conversion} feet = ${feetToMeters} meters`;
+    gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters} liters`;
 
-  gallonsEl.textContent = ` ${conversion} gallons = ${gallonsToLiters} liters`;
+    poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo} kilograms`;
 
-  poundsEl.textContent = ` ${conversion} pounds = ${poundsToKilo} kilograms`;
+    metersEl.textContent = `${conversion} meters = ${metersToFeet} feet `;
 
-  metersEl.textContent = `${conversion} meters = ${metersToFeet} feet `;
+    litersEl.textContent = `${conversion} liters = ${litersToGallons} gallons `;
 
-  litersEl.textContent = `${conversion} liters = ${litersToGallons} gallons `;
-
-  kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} pounds `;
+    kilosEl.textContent = `${conversion} kilograms = ${kilosToPounds} pounds `;
+  }
 };
 
 submit.addEventListener('click', () => userInputConversion());
