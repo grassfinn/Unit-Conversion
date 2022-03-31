@@ -3,7 +3,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,35 +14,33 @@
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-A simple unit converter that converts imperial to mertic or metric to imperial. The default is 20 for all units, but the user can input there own measurements to be converted.
+A simple unit converter that converts imperial to metric or metric to imperial. The default is 20 for all units, but the user can input their own measurements to be converted.
 ### Purpose
 
 Users should be able to:
 
-- Input information into the input field and recieve the conversions for their number.
+- Input information into the input field and receive the conversions for their number.
 
 ### Screenshot
-
-![](./screenshots/deafultApp.png)
-
-![](./screenshots/userInput.png)
-
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
+The default layout is when the page is loaded.
+![](./screenshots/deafultApp.PNG)
+What it looks like when the user puts input in.
+![](./screenshots/userInput.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Unit Converstion](https://grassfinn.github.io/Unit-Conversion/)
 
 ## My process
+First, I created the HTML elements and selected them through Javascript so I could manipulate them through the DOM.
+I created the formulas for each conversion and store them into a variable.
+Then, I created a function that converts the values and sets the text content of the unit to the converted numbers.
+To allow users to input their own values, I created input and button and added a click event to the button that grabs the value of the input and runs the conversion function.
+
 
 ### Built with
+
+HTML5/CSS3/Vanilla Javascript
 
 ### What I learned
 
@@ -57,11 +54,11 @@ const userNumber = input.value;
 ```
 
 ### Continued development
-
-
+Some media queries to make it mobile and tablet friendly.
+Adjust styling.
 ### Useful resources
 
-- [CSS Gradient Generator](https://www.joshwcomeau.com/gradient-generator/) - A cool tool that can create gradients for you and give the CSS neeeded to create it.
+- [CSS Gradient Generator](https://www.joshwcomeau.com/gradient-generator/) - A cool tool that can create gradients for you and give the CSS needed to create them.
 
 ## Author
 
