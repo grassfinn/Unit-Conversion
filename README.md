@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/deafultApp.png)
+![](./screenshots/deafultApp.PNG)
 
-![](./screenshots/userInput.png)
+![](./screenshots/userInput.PNG)
 
 ### Links
 
