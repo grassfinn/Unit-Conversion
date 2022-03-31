@@ -44,13 +44,34 @@ HTML5/CSS3/Vanilla Javascript
 
 ### What I learned
 
-I learned how to use the DOM and how you can use querySelector to grab specific elements, classes, ids, or any other attribute.
+I learned how to use the DOM and how you can use querySelector to grab specific elements, classes, ids, or any other attributes.
 I learned about the different properties that you can use on Input elements.
 ```js
 const number = document.querySelector('#number-to-convert');
 // querySelector grabs the ID of number-to-convert. 
 const userNumber = input.value;
 // input.value is the number(value) a user puts into the number input field.
+```
+I learned how you can use spans to make certain words/ares within a a single line element to style or give functionality to.
+```html
+ <section class="length even">
+            <h3>Length (Meter/Feet)</h3>
+            <p class="number-conversion">
+              <span id="meters"></span>|<span id="feet"></span>
+            </p>
+          </section>
+          <section class="volume even">
+            <h3>Volume (Liters/Gallons)</h3>
+            <p class="number-conversion">
+              <span id="liters"></span>|<span id="gallons"></span>
+            </p>
+          </section>
+          <section class="mass even">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p class="number-conversion">
+              <span id="kilos"></span>|<span id="pounds"></span>
+            </p>
+          </section>
 ```
 
 ### Continued development
@@ -62,7 +83,7 @@ Adjust styling.
 
 ## Author
 
-- Website - [My blog: HarpCode](https://harpcode.tech/)
+- My Blog - [HarpCode](https://harpcode.tech/)
 
 - Twitter - [@hobjohn61](https://twitter.com/hobojohn61)
 
