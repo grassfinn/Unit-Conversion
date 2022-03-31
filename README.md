@@ -32,11 +32,11 @@ What it looks like when the user puts input in.
 - Live Site URL: [Unit Converstion](https://grassfinn.github.io/Unit-Conversion/)
 
 ## My process
--First, I created the HTML elements and selected them through Javascript so I could manipulate them through the DOM.
--I created the formulas for each conversion and stored them into a variable.
--Then, I created a function that converts the values and sets the text content of the unit to the converted numbers.
+* First, I created the HTML elements and selected them through Javascript so I could manipulate them through the DOM.
+* I created the formulas for each conversion and stored them into a variable.
+* Then, I created a function that converts the values and sets the text content of the unit to the converted numbers.
  To allow users to input their own values. 
--I created input and button and added a click event to the button that grabs the value of the input and runs the conversion function.
+* I created input and button and added a click event to the button that grabs the value of the input and runs the conversion function.
 
 
 ### Built with
