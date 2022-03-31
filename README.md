@@ -29,8 +29,7 @@ What it looks like when the user puts input in.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Unit Converstion](https://grassfinn.github.io/Unit-Conversion/)
 
 ## My process
 First, I created the HTML elements and selected them through Javascript so I could manipulate them through the DOM.
@@ -56,7 +55,7 @@ const userNumber = input.value;
 
 ### Continued development
 Some media queries to make it mobile and tablet friendly.
-
+Adjust styling.
 ### Useful resources
 
 - [CSS Gradient Generator](https://www.joshwcomeau.com/gradient-generator/) - A cool tool that can create gradients for you and give the CSS needed to create them.
